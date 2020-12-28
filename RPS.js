@@ -6,5 +6,17 @@ const getUserChoice = userInput => {
         console.log('Error!');
     }
 };
-console.log(getUserChoice('Paper'));
-console.log(getUserChoice('fork'));
+
+function getComputerChoice() {
+    computerChoice = Math.floor(Math.random() * 3);
+    switch (computerChoice) {
+        case 0:
+            return 'rock';
+        case 1:
+            return 'paper';
+        case 2:
+            return 'scissors';
+    }
+}
+console.log(getComputerChoice());
+console.log(getComputerChoice());
