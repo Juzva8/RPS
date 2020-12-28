@@ -18,5 +18,9 @@ function getComputerChoice() {
             return 'scissors';
     }
 }
-console.log(getComputerChoice());
-console.log(getComputerChoice());
+
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return 'The game is a tie!';
+    }
+}
