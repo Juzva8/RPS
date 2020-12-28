@@ -6,3 +6,5 @@ const getUserChoice = userInput => {
         console.log('Error!');
     }
 };
+console.log(getUserChoice('Paper'));
+console.log(getUserChoice('fork'));
